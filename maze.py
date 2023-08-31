@@ -10,7 +10,7 @@ class Maze:
     DEPTH = 6
     X = 40
     Y = 40
-    FILL = 0.25
+    FILL = 0.25 
     
     def __init__(self):
 
