@@ -2,7 +2,7 @@ import pygame
 import random
 from alive_progress import alive_bar
 
-pygame.display.set_caption("Pathfinder")
+pygame.display.set_caption("Pathfinder") 
 
 class Maze:
 
