@@ -1,16 +1,20 @@
 import pygame
 import random
+import json
 from alive_progress import alive_bar
+
+f = open('settings.json')
+settings = json.load(f)
 
 pygame.display.set_caption("Pathfinder") 
 
 class Maze:
 
-    TILE_SIZE = 15
-    DEPTH = 6
-    X = 40
-    Y = 40
-    FILL = 0.25 
+    TILE_SIZE = settings['tilesize']
+    DEPTH = settings['depth']
+    X = settings['x']
+    Y = settings['y']
+    FILL = settings['fill']
     
     def __init__(self):
 
